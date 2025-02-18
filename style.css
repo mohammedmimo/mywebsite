@@ -1,0 +1,92 @@
+/* تصميم عام للموقع */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #74b9ff, #a29bfe);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* إعدادات الحاوية الرئيسية */
+.container {
+    max-width: 750px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+/* عنوان الصفحة */
+h1 {
+    font-size: 2.5em;
+    color: #2f3542;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* الأزرار الخاصة بتغيير اللغة */
+.language-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.language-buttons button {
+    background-color: #1abc9c;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.language-buttons button:hover {
+    background-color: #16a085;
+}
+
+/* تفاعل الأزرار */
+button:active {
+    transform: scale(0.98);
+}
+
+/* تنسيق النصوص */
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #34495e;
+    text-align: justify;
+}
+
+/* تنسيق الصور */
+img {
+    width: 80%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* تأثير fade-in */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* تنسيق النصوص بالعناوين الفرعية */
+h2 {
+    font-size: 2em;
+    color: #2f3542;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
